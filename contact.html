@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header-menu-link"></div>
+    <header class="main-panel">
+      <div class="container">
+        <div class="main-panel-logo-menu">
+          <div class="logo">
+            <a href="https://vijaybhesaniya.github.io/portfolio/"
+              ><img src="image/logo.png" width="157px"
+            /></a>
+          </div>
+          <div class="menu">
+            <nav class="menu-bar-collapse" id="menu-bar">
+              <div class="menu-icon-responsive" id="menu-link-bar">
+                <a href="index.html" class="menu-text-link active">Home</a>
+                <a href="media/Vijay's Resume .pdf" class="menu-text-link"
+                  >About Us</a
+                >
+                <a href="#skill" class="menu-text-link">My Skill</a>
+                <a href="#experience" class="span-a menu-text-link"
+                  >My Experience</a
+                >
+                <a href="#service" class="menu-text-link">My Services</a>
+                <a href="#contact" class="menu-text-link">Contact Us</a>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="myFunction()"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="contact-us-section contact gray" id="contact">
+      <div class="container">
+        <div class="accordion-flush-contact-us">
+          <h2 class="heading-text">Contact Us</h2>
+          <div class="contact-us-form">
+            <form onsubmit="SendEmail(); reset(); return false;">
+              <div class="contact-form">
+                <div class="input-field w-50">
+                  <label>First Name</label>
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    id="firstname"
+                    required
+                  />
+                </div>
+                <div class="input-field w-50">
+                  <label>Last Name</label>
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    id="lastname"
+                    required
+                  />
+                </div>
+                <div class="input-field w-50">
+                  <label>Email Address</label>
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="input-field w-50">
+                  <label>Phone No.</label>
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    id="number"
+                    pattern="[7-9]{1}[0-9]{9}"
+                    required
+                  />
+                </div>
+                <div class="input-field">
+                  <label>Message</label>
+                  <textarea
+                    placeholder="Enter Message Info"
+                    id="message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" id="btn">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="alert-danger-contact-us">
+            <div class="info">
+              <h3>
+                <i class="fa-solid fa-location-dot"></i>
+              </h3>
+              <h4>Address</h4>
+              <a
+                href="https://maps.app.goo.gl/85K32kMoB47xGunr5"
+                target="_blank"
+                >House no 5 , Raj-Nagar ,ShreejiNagar , Joshipura , Junagadh</a
+              >
+            </div>
+            <div class="info">
+              <h3>
+                <i class="fa fa-phone"></i>
+              </h3>
+              <h4>Phone</h4>
+              <a href="tel:+919510426764" target="_blank">+91 9510426764</a>
+            </div>
+            <div class="info">
+              <h3>
+                <i class="fa fa-envelope-o"></i>
+              </h3>
+              <h4>Email</h4>
+              <a href="mailto:bhesaniyav38@gmail.com" target="_blank"
+                >bhesaniyav38@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>
