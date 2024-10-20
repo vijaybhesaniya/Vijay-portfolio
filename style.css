@@ -370,9 +370,10 @@ span.span-col {
   height: 100%;
 }
 
-.project-detail-items .project-detail-item h2 {
+.project-detail-items .project-detail-item h3 {
   font-size: 30px;
   padding: 0 5px;
+  cursor: pointer;
 }
 .project-detail-items .project-detail-item .project-detail-image {
   width: 100%;
@@ -384,9 +385,6 @@ span.span-col {
   height: 100%;
   mix-blend-mode: multiply;
   object-fit: contain;
-}
-.project-detail-items .project-detail-item h2 {
-  cursor: pointer;
 }
 .project-detail-items .project-detail-item .project-detail-subheading {
   height: 100%;
